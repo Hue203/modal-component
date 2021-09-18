@@ -1,32 +1,145 @@
-.modal {
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  min-width: 100px;
+  padding: 16px 32px;
+  border: none;
+  background-color: #5cb85c;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+}
+.modal-wrapper {
+  background: #eeb996;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   position: fixed;
-  left: 10;
-  top: 10;
-  right: 10;
-  bottom: 10;
+  transition: all 1s ease;
+}
+.modal-wrapper .fullscreen {
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease;
+  position: relative;
+}
+.modal {
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .modal-content {
+  /* width: 800px; */
   height: auto;
   min-height: 100%;
   background-color: #fff;
-  border-radius: 0;
+  border-radius: 10px;
 }
 
 .modal-header,
 .modal-footer {
-  padding: 10px;
+  background-color: rgba(68, 60, 60, 0.1);
+  color: black;
+  text-decoration: none;
+  border: none;
+  padding: 1rem;
+  box-shadow: 0 0 0 1px orange;
+  border-radius: 10px;
 }
-
 .modal-title {
-  margin: 0;
+  margin: 70;
+  text-decoration: none;
+  border: none;
 }
-
+/**Modal body**/
 .modal-body {
+  text-decoration: none;
+  border: none;
   padding: 10px;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
+}
+.modal-body h4 {
+  font-size: 20px;
+  color: #f89f64;
+}
+.modal-body p {
+  font-size: 16px;
+}
+.modal-body-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  width: 70%;
+  border: 1px solid #c99;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 3px #000;
+  background-color: rgba(116, 93, 93, 0.1);
+}
+/**Modal Fotter**/
+.buttonClose {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 80px;
+  background-color: #f89f64;
+}
+.buttonClose:hover {
+  background: #5cb85c;
+}
+.close-modal-btn {
+  cursor: pointer;
+}
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+/*animation modal*/
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 60px, 0);
+    background-color: rgba(116, 93, 93, 0.1);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    background-color: #fff;
+  }
+}
+
+.animated {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.animatedFadeInUp {
+  opacity: 1;
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
 }

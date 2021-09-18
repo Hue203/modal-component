@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin-top: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  min-width: 100px;
+  padding: 16px 32px;
+  border: none;
+  background: #141414;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+}
+.buttonOpen {
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: #f89f64;
+}
+.buttonOpen:hover {
+  background: #8ed26c;
+}
