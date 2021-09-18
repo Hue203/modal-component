@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .container {
   margin-top: 170px;
   display: flex;
@@ -25,8 +26,8 @@
   color: #fff;
   font-size: 16px;
   border-radius: 10px;
-  background-color: #f89f64;
+  background-color: #084c61;
 }
 .buttonOpen:hover {
-  background: #8ed26c;
+  background-color: #55c5c1;
 }
