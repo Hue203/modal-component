@@ -12,4 +12,6 @@
 2. Run `npm install`.
 3. Run app with `npm start`.
 
-# Live-demo website: modalfullscreen.netlify.app
+# Live-demo website:
+
+![Link](modalfullscreen.netlify.app)
