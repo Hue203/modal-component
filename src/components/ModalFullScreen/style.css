@@ -50,12 +50,17 @@
 
 .modal-header,
 .modal-footer {
+  display: flex;
   color: rgba(255, 255, 255, 0.714);
   color: black;
   text-decoration: none;
   border: none;
   padding: 1rem;
 }
+.modal-header{
+  justify-content: space-between;
+}
+.modal-footer {justify-content: flex-end;}
 @media only screen and (max-width: 360px) {
   .modal-header {
     margin-top: 180px;
@@ -65,7 +70,8 @@
   }
 }
 .modal-title {
-  margin: 70;
+  font-size: 30px;
+  font-weight: 700;
   color: white;
 }
 /**Modal body**/
@@ -77,10 +83,12 @@
   border-bottom: 1px solid #eee;
 }
 .modal-body h4 {
+ 
   font-size: 20px;
   color: #f89f64;
 }
 .modal-body p {
+  margin: 10px;
   color: white;
   font-size: 1rem;
 }
@@ -88,6 +96,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 .form {
   width: 70%;
@@ -98,11 +107,13 @@
   background-color: rgba(116, 93, 93, 0.1);
   color: white;
   font-size: 1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 /**Modal Fotter**/
 .buttonClose {
-  width: 128px;
-  height: 48px;
+  width: 125px;
+  height: 40px;
   display: flex;
   color: white;
   font-size: 19px;

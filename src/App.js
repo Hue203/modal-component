@@ -1,5 +1,4 @@
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState } from "react";
 import ModalFullScreen from "./components/ModalFullScreen/ModalFullScreen";
 
