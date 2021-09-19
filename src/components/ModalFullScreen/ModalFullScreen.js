@@ -27,9 +27,8 @@ const ModalFullScreen = ({
           <>
             <div className="text-center">
               <ClipLoader color="#FFD700" size={150} loading={submitLoading} />
-              <div>
-                
-                {modalText}</div>
+              <div className="modalText"> {modalText}</div>
+              
             </div>
           </>
         ) : (

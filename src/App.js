@@ -8,7 +8,7 @@ function App() {
   const [modalText, setModalText] = useState("");
   const handleSubmit = () => {
     setModalText(
-      "Submitting Form ... The modal will be closed after two seconds"
+      "Submitting Form"
     );
     setSubmitLoading(true);
     setTimeout(() => {
