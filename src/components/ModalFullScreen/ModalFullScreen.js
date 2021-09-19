@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import "react-toastify/dist/ReactToastify.css";
+
 import { ClipLoader } from "react-spinners";
 
 const ModalFullScreen = ({
@@ -28,7 +28,6 @@ const ModalFullScreen = ({
             <div className="text-center">
               <ClipLoader color="#FFD700" size={150} loading={submitLoading} />
               <div className="modalText"> {modalText}</div>
-              
             </div>
           </>
         ) : (
