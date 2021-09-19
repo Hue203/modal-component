@@ -14,4 +14,4 @@
 
 # Live-demo website:
 
-![Link](modalfullscreen.netlify.app)
+[Link](https://modalfullscreen.netlify.app/)
