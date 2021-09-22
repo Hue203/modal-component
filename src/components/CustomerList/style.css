@@ -1,8 +1,8 @@
-/* .table-users {
+.table-users {
   display: flex;
   justify-content: center;
   padding: 50px;
-} */
+}
 .cart-table tbody {
   background-color: #fffdcac7;
 }
@@ -34,4 +34,10 @@
   border-radius: 10px;
   margin-left: 30px;
   margin-right: 20px;
+}
+@media only screen and (max-width: 627px) {
+  .table-users {
+  }
+  .cart-table {
+  }
 }

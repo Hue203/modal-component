@@ -33,44 +33,54 @@ const CustomerList = () => {
         </div>
       ) : (
         <>
-          <Button variant="success" onClick={handleOnclickAdd}>
-            ADD
-          </Button>
           {/* <div>{JSON.stringify(createCustomer, null, 2)}</div> */}
-          <Container className="table-users" fluid>
-            <Table striped bordered hover className="cart-table">
-              <thead>
-                <tr>
-                  <th className="mouse-hover">First Name</th>
-                  <th className="mouse-hover">Last Name</th>
-                  <th className="mouse-hover">Email</th>
-                  <th className="mouse-hover">Images</th>
-                  <th>Actions </th>
-                </tr>
-              </thead>
-              <tbody>
-                {customers &&
-                  customers.map((item) => (
-                    <tr key={item._id}>
-                      <td>{item.first_name}</td>
-                      <td>{item.last_name}</td>
-                      <td>{item.email}</td>
-                      <td>
-                        <img
-                          src={item.avatar}
-                          alt="user-avatar"
-                          width="100px"
-                          className="user-avatar"
-                        />
-                      </td>
-                      <td className="action-btn">
-                        <Button variant="outline-success">EDIT</Button>
-                        <Button variant="outline-success">DELETE</Button>
-                      </td>{" "}
+          <Container fluid>
+            <Button variant="success" onClick={handleOnclickAdd}>
+              ADD
+            </Button>
+            <Row className="table-users">
+              <Col>
+                <Table striped bordered hover className="cart-table">
+                  <thead style={{ textAlign: "center" }}>
+                    <tr>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Email</th>
+                      <th
+                        style={{ textAlign: "center" }}
+                        className="mouse-hover"
+                      >
+                        Images
+                      </th>
+                      <th>Actions </th>
                     </tr>
-                  ))}
-              </tbody>{" "}
-            </Table>
+                  </thead>
+                  <tbody style={{ textAlign: "center" }}>
+                    {customers &&
+                      customers.map((item) => (
+                        <tr style={{ textAlign: "center" }} key={item._id}>
+                          <td>{item.first_name}</td>
+                          <td>{item.last_name}</td>
+                          <td>{item.email}</td>
+                          <td>
+                            <img
+                              src={item.avatar}
+                              alt="user-avatar"
+                              width="100px"
+                              className="user-avatar"
+                            />
+                          </td>
+                          <td className="action-btn">
+                            <Button variant="outline-success">EDIT</Button>
+                            <Button variant="outline-success">DELETE</Button>
+                          </td>{" "}
+                        </tr>
+                      ))}
+                  </tbody>{" "}
+                </Table>
+              </Col>
+            </Row>
+
             <ModalFullScreen
               show={showModal}
               onClose={() => setShowModal(false)}
