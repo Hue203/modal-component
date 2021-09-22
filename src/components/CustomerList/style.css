@@ -1,0 +1,37 @@
+/* .table-users {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+} */
+.cart-table tbody {
+  background-color: #fffdcac7;
+}
+.cart-table thead {
+  background-color: #198754;
+  color: white;
+}
+
+.action-btn {
+  margin-bottom: 20px;
+  padding: 3px 3px !important;
+  font-size: 12px;
+  text-align: center;
+}
+.btn-success {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+  color: #fff;
+  background-color: #198754;
+  border-color: #198754;
+}
+.btn-outline-success {
+  margin: 10px;
+  color: #198754;
+  border-color: #198754;
+}
+.user-avatar {
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-right: 20px;
+}

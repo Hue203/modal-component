@@ -1,54 +1,39 @@
 import "./App.css";
-import React, { useState } from "react";
-import ModalFullScreen from "./components/ModalFullScreen/ModalFullScreen";
+import React from "react";
+
+import CustomerList from "./components/CustomerList/CustomerList";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [showModal, setShowModal] = useState(false);
-  const [submitLoading, setSubmitLoading] = useState(false);
-  const [modalText, setModalText] = useState("");
-  const handleSubmit = () => {
-    setModalText(
-      "Submitting Form"
-    );
-    setSubmitLoading(true);
-    setTimeout(() => {
-      setShowModal(false);
-      setSubmitLoading(false);
-    }, 2000);
-  };
-  const handleShow = () => {
-    setShowModal(true);
-  };
   return (
     <>
-      <div className="container">
+      <CustomerList />
+      {/* <div className="container">
+        {customers && customers.map((ele) => <div>{ele.first_name}</div>)}
         <button className="buttonOpen" onClick={handleShow}>
           I'm Modal
           <svg
             aria-hidden="true"
             focusable="false"
             data-prefix="fas"
-            data-icon="arrow-alt-circle-down"
-            className="svg-inline--fa fa-arrow-alt-circle-down fa-w-10"
+            data-icon="arrow-alt-circle-up"
+            className="svg-inline--fa fa-arrow-alt-circle-up fa-w-10"
             role="img"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
+            cursor="pointer"
           >
             <path
               fill="currentColor"
-              d="M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm292 116V256h70.9c10.7 0 16.1-13 8.5-20.5L264.5 121.2c-4.7-4.7-12.2-4.7-16.9 0l-115 114.3c-7.6 7.6-2.2 20.5 8.5 20.5H212v116c0 6.6 5.4 12 12 12h64c6.6 0 12-5.4 12-12z"
+              d="M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm143.6 28.9l72.4-75.5V392c0 13.3 10.7 24 24 24h16c13.3 0 24-10.7 24-24V209.4l72.4 75.5c9.3 9.7 24.8 9.9 34.3.4l10.9-11c9.4-9.4 9.4-24.6 0-33.9L273 107.7c-9.4-9.4-24.6-9.4-33.9 0L106.3 240.4c-9.4 9.4-9.4 24.6 0 33.9l10.9 11c9.6 9.5 25.1 9.3 34.4-.4z"
             ></path>
           </svg>
           Click Me!
-        </button>
-        <ModalFullScreen
-          show={showModal}
-          onClose={() => setShowModal(false)}
-          submit={handleSubmit}
-          submitLoading={submitLoading}
-          modalText={modalText}
-        />
-      </div>
+        </button> */}
+
+      {/* <div>{JSON.stringify(createdCustomer, null, 2)}</div>
+      <button onClick={handleCreate}>Create Customer</button> */}
+      {/* </div> */}
     </>
   );
 }
