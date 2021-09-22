@@ -1,6 +1,6 @@
 # Modal FullScreen Component
 
-![Intro](./modalComp.gif)
+![Intro](./modalComp2.gif)
 
 ## Dependencies
 
